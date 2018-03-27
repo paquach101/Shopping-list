@@ -1,19 +1,18 @@
 var button = document.getElementById('Output'),
-button.addEventListener('Output', () => {
-   document.getElementById('myText').textContent = addItem()
-});
+    button.addEventListener('Output', addItem);
+ var ul = document.getElementById('ul')[0],
 
 function addItem() {
-    var input = document.getElementById("myText").value;
-    //var ul = document.createElement("li");
-    var ul = document.getElementById('ul')[0];
-    var node = document.createElement("LI"),
-        textnode = document.createTextNode("water");
-    node.appendChild(textnode);
-    if(input ==''){
-        alert("someting wrong");
-    }else{
-         document.getElementById("myList").appendChild(node);
+    var input = document.getElementById("myText").value,
+        node = document.createElement("li"),
+        textnode = document.createTextNode("iteew");
+    node.appendChild(input);
+    if (input == '') {
+        return "falsde";
+    } else {
+
+  document.getElementById("myList").appendChild(node);
+
     }
-   document.getElemtentById("myText").value="";
+    document.getElemtentById("myText").value = "";
 }
