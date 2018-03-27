@@ -1,13 +1,16 @@
 var button = document.getElementById('Output'),
     button.addEventListener('Output', addItem);
- var ul = document.getElementById('ul'),
 
-function addItem() {
-    var input = document.getElementById("myText").value,
-        li = document.createElement("li"),
-        textnode = document.createTextNode("iteew");
-    li.appendChild(input);
+    function addItem() {
+        var input = document.getElementById("myText").value,
+            li = document.createElement("li"),
+            node = document.createTextNode("item"); //useless
+       li.textContent = input
 
-
-
-}
+        if (input == '') {
+            return "false"
+        } else {
+             //li.appendChild(li);
+            return document.getElementById(ul).appendChild(li);
+        }
+    }
