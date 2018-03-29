@@ -8,5 +8,4 @@ function addItem() {
     document.getElementById("ul").appendChild(li);
     var deleteButton = document.createElement("myList");
         button.addEventListener('click', deleteItem);
-
 }
