@@ -1,5 +1,5 @@
 var button = document.getElementById('Output'),
-    button.addEventListener('Output', addItem);
+    button.addEventListener('click', addItem);
 
     function addItem() {
         var input = document.getElementById("myText").value,
@@ -11,6 +11,6 @@ var button = document.getElementById('Output'),
             return "false"
         } else {
              //li.appendChild(li);
-            return document.getElementById(ul).appendChild(li);
+            return document.getElementById("ul").appendChild(li);
         }
     }
