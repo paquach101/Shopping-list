@@ -6,5 +6,7 @@ function addItem() {
         li = document.createElement("li");
     li.textContent = input;
     document.getElementById("ul").appendChild(li);
+    var deleteButton = document.createElement("myList");
+        button.addEventListener('click', deleteItem);
 
 }
