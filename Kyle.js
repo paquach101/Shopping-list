@@ -1,5 +1,8 @@
-var deleteButton = document.getElementById("myList");
+var deleteButton = document.createElement("myList");
+button.addEventListener('click', deleteItem);
 
 function deleteItem(input) {
-    ul.removeChild(input);
+    var input = document.getElementById("myText").value;
+    var li = document.getElementById("li");
+    li.remove(input);
 }
