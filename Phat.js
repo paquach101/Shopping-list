@@ -1,16 +1,10 @@
-var button = document.getElementById('Output'),
-    button.addEventListener('click', addItem);
+var button = document.getElementById('Output');
+button.addEventListener('click', addItem)
 
-    function addItem() {
-        var input = document.getElementById("myText").value,
-            li = document.createElement("li"),
-            node = document.createTextNode("item"); //useless
-       li.textContent = input
+function addItem() {
+    var input = document.getElementById("myText").value,
+        li = document.createElement("li");
+    li.textContent = input;
+    document.getElementById("ul").appendChild(li);
 
-        if (input == '') {
-            return "false"
-        } else {
-             //li.appendChild(li);
-            return document.getElementById("ul").appendChild(li);
-        }
-    }
+}
